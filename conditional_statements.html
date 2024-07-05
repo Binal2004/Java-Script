@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Conditional Statements </title>
+</head>
+<body>
+    <script>
+
+          /*
+               CONDITIONAL STATEMENTS :-
+               (1) IF Statement :-
+                    Syntax:
+                     if(condition){
+                           statements;
+                     }       
+
+               (2) IF ELSE Statement :-
+                    Syntax:
+                     if(condition){
+                           statements;
+                    } else{
+                           statements;
+                    }
+
+               (3) ELSE IF Statement :-
+                    Syntax:
+                     if(condition){
+                        statements;
+                     } else if(condition){
+                        statements;
+                     } else if(condition){
+                        statements;
+                     } else{
+                        statements;
+                     }
+
+               (4) NESTED IF Statement :-
+                    Syntax:
+                    if(condition){
+                        statements;
+                    } if(condition){
+                        statements;
+                    } else(condition){
+                        statements;
+                    } else(condition){
+                        statements;
+                    }    
+
+          */
+
+          // IF STATEMENTS 
+
+            var num = 2
+            
+            if(num >= 18){
+                document.write("<br>You can vote ! ")
+            }
+
+            // IF ELSE STATEMENTS
+
+            var age = 23
+
+            if(num >= 18){
+                document.write("<br>You can vote!")
+            } else{
+                document.write("<br>You cannot vote!")
+            }
+         
+            // ELSE IF STATEMENTS  
+            
+            var num = 45
+            
+            if(num > 0){
+                document.write("<br>Positive!")
+            } else if(num == 0){
+                document.write("<br>Neutral!")
+            } else{
+                document.write("<br>Negetive!")
+            }
+
+            // NESTED IF STATEMENTS
+            
+            var num = 14
+
+            if(num % 7 == 0){
+               if(num % 2 ==0){ 
+                 document.write("It is divisible by both")
+            }else{
+                 document.write("It is divisible by 7")
+            }
+        }else{
+            document.write("It is not divisible by 7")
+        }
+
+</script>         
+</body>
+</html>
