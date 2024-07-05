@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Functions </title>
+</head>
+<body>
+<script>
+/*
+    - User - Defined Functions : 
+   
+       (1) Default Functions
+       (2) Parametrised Functions
+       (3) Return Type Functions 
+       (4) Recurssive Functions
+
+    - Built - in Functions :
+
+       (1) Alert()
+       (2) Confirm()
+       (3) Prompt()
+       (4) ParseInt()     converts string into int
+       (5) ParseFloat()   converts string into float
+       (6) Number
+
+*/
+   // User - Defined Functions
+
+   // (1) Default Functions :  
+            function display(){
+                document.write("Hello World!");
+            }
+
+            display();
+
+   // (2) Parametrised Functions : 
+            function  addition(a, b){
+                document.write(a+b,"<br>");
+            }    
+
+            addition(2,4);
+
+   // (3) Return Type Functions :
+             function subtraction(x , y){
+                return x*y;
+             }
+
+             var ans = subtraction(5,4);
+             document.write("Subtraction is : ",ans);
+
+    // (4) Recurssive Function :
+            //  function summation(n){
+
+            //     if(n == 1){
+            //         return 1;
+            //     }else{
+            //         return n+summation(n-1);
+            //     }
+            //  }
+
+            //  var result = summation(10);
+            //  document.write(result);
+
+
+    // Built - In Functions
+    
+    // (1) Alert Function : 
+        alert("hello");
+ 
+    // (2) Confirm Function :
+        var ans = confirm("Are you happy ?");
+
+        if(ans == true){
+            document.write("Good ...")
+        }else{
+            document.write("You should die!")
+        }
+
+    // (3) Prompt Function :
+        var name = prompt("Enter your name : ")
+        document.write("Welcome" + name)
+
+    // (4) ParseInt() : 
+        var num1 = parseInt(prompt("Enter First Number : "));
+        var num2 = parseInt(prompt("Enter Second Number : "));
+
+        document.write(num1 + num2);
+
+    // (5) ParseFloat() : 
+        var num1 = ParseFloat(prompt("Enter First Number : "));
+        var num2 = ParseFloat(prompt("Enter Second Number : "));
+
+        document.write(num1 + num2);
+
+    // (6) Number() : 
+        var num1 = Number(prompt("Enter First Number : "));
+        var num2 = Number(prompt("Enter Second Number : "));
+
+        document.write(num1 + num2);
+
+</script>
+</body>
+</html>
