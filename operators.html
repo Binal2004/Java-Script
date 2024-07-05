@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Operators </title>
+</head>
+<body>
+<script>
+
+/*
+   Operator :-
+     (1) Arithemetic Operator 
+         +, -, *, %, /, **
+        **  <- Exponential (power)
+             5 ** 2 -> 25
+             2 ** 4 -> 16
+
+     (2) Relational Operator 
+         <, >, <=, >=, ==, !==, ===
+         
+     (3) Logical Operators 
+         &&, ||, ! 
+
+     (4) Assignment Operator 
+         +=, -=. *=, /=, %=, **=
+         
+     (5) Increment / Decrement
+           ++          --
+    prefix: ++1        --1
+       i + 1 = 1
+
+    postfix: i++        i--
+       i = i + 1
+
+*/
+
+document.write("<br> Expo : ",5**5)
+document.write("<br> Less: ",5 < 7)
+
+var x = 5
+var y = '5'
+
+document.write("<br> Arithemetic Operators")
+document.write("<br> Equal and type : ", x === y)
+document.write("<br> Not Equal and type : ", x !== y)
+
+document.write("<br> Logical Operators")
+document.write("<br>Logical and : ", (5 >= 4) && (5 != 4))
+document.write("<br>Logical or : ", (5 <= 4) || (5 != 4))
+document.write("<br>Logical not : ", !(5 <= 4))
+
+document.write("<br> Less : ", 5 < 7)
+
+var num11 = 50
+//num11 = num11 + 10 
+num11 +=10
+document.write("<br> Assignment += : ",num11)
+
+num12 = 15
+document.write("<br> Increment ++ pre : ", ++num12)
+
+num13 = 20
+document.write("<br> Increment ++ post : ", num13++)
+document.write("<br> Increment ++ post : ", num13)
+
+</script>
+</body>
+</html>
