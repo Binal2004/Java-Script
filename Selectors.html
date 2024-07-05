@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Selectors </title>
+</head>
+<body>
+    
+ <!--
+
+     There are three types of selectors :-
+     (1) document.getElementById()
+     (2) doxument.getElementByTagName()
+     (3) document.getElementByClassName()
+ 
+ -->
+
+ <p id="p1"> I am <b> First </b> tag </p>
+ <p> I am second p </p>
+
+ <h2> I am first h2 tag </h2>
+ <h2> I am secong h2 tag </h2>
+
+ <h3 class="dummy"> I am h3 tag </h3>
+ <h4 class="dummy"> I am h4 tag </h4>
+
+ <script>
+
+    var text = document.getElementById("p1").innerHTML;
+    console.log(text);
+
+    var text2 = document.getElementsByTagName("h2")[0].innerText;
+    console.log(text2);
+
+    var text3 = document.getElementsByClassName("dummy")[1].innerText;
+    console.log(text3);
+
+</script>
+</body>
+</html>
