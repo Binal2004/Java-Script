@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<script>
+
+/*
+
+  - Use <script><script> tag in body tag , prefer using it in body tag rather than in head tag. 
+
+    (1) INTERNAL JS 
+        <script> <script>
+    (2) EXTERNAL JS
+        new_file.js -> link
+        <script scr="file_name.js"> <script>
+
+      -> print
+        (1) document.write("statement tag" , "", "", variable_name)
+        (2) console.log("statement")
+
+    Tokens :- (1) Identifiers :
+                          -> Name 45 id & count
+
+              (2) Keywords :
+                          -> those words which is reserved for that language 
+                          -> If, continue, break, else, for, var ...
+                          -> we cannot take keyword as a identifier
+
+              (3) Constants :
+                          -> a fixed value it can not modify or change while execution
+              (4) Variable : 
+                          -> It gives a memory loaction to store a value.
+                                box = toys
+                          -> create -> var variable_name = value;
+                                -> condition's
+                                   (1) we cannot start a variable name with digit or symbol.
+                                   (2) variable name cannot have spaces in between. 
+                                   (3) variavle name can be seperated using underscore (_).
+                                   (4) After the first place digit and symbol can be used. The variable can be start only by alphabets. 
+                                   (5) Only symbol that can be used is underscore (_).      
+*/
+
+   document.write("<h1 align-'center' style='color: skyblue;'> HELLO WORLD ! </h1>")
+   console.log("HELLO UNIVERSE !")
+
+   var num = 56
+   const num2 = 456
+
+   document.write("<br>",num);
+   document.write("<br>", num2);
+
+</script>
+</body>
+</html>
