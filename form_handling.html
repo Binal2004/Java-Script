@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Form Handling </title>
+</head>
+<body>
+    <form name="frm">
+        name : <input type="text" name="name"><br>
+        age : <input type="age" name="age"><br>
+           <input type="submit" onclick="return display()" name="">
+    </form>   
+
+    <h1 id="demo"></h1>
+    <script>
+
+        function display(){
+
+            var name = frm.name.value
+            var age = frm.age.value
+
+         //   alert(name+"_"+age)
+            document.getElementById('demo').innerHTML = name+age
+         //   document.write(name+age)  
+            return false 
+        } 
+
+    </script>  
+</body>
+</html>
