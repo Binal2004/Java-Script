@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Event Handling </title>
+</head>
+<body>
+
+    <button onclick="display()" onmouseover="shift_me()"> Click me </button>
+
+    <p onmouseover="change_color()" onmouseout="make_blue()">
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita eos 
+        <br>esse facilis voluptas quasi natus aliquid dignissimos, culpa pariatur minus assumenda deserunt dolores, voluptatibus nobis 
+        <br>laborum nam maxime neque repellendus?</p>
+
+    <script>
+
+        function display(){
+            alert("hello");
+        }
+                                              
+        function change_color(){
+            document.getElementsByTagName('p')[0].style.color = "blue";
+        }
+
+        function make_blue(){
+            document.getElementsByTagName('p')[0].style.color = "yellow";
+        }
+
+</script>
+</body>
+</html>
